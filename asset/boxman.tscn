@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://m2wnvv8h5eli"]
+
+[ext_resource type="PackedScene" uid="uid://cquaby7vjpq3d" path="res://asset/Hip Hop Dancing.fbx" id="1_6ii1j"]
+
+[node name="Node3D" type="Node3D" unique_id=1002465708]
+
+[node name="Hip Hop Dancing" parent="." unique_id=252581030 instance=ExtResource("1_6ii1j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3477366, 0, -3.1689377)

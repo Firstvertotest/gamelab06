@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://44cvbbg4lqf5"]
+
+[ext_resource type="Script" uid="uid://b8v6mrja3oavj" path="res://asset/demo.gd" id="1_bp6lh"]
+[ext_resource type="PackedScene" uid="uid://brakhjr8l7ho7" path="res://asset/blockman.tscn" id="1_cru5e"]
+[ext_resource type="ArrayMesh" uid="uid://kfql8ctq2gim" path="res://asset/Island01.obj" id="3_h4np7"]
+[ext_resource type="ArrayMesh" uid="uid://rom5c70t6mlk" path="res://asset/Tree.obj" id="4_ehybj"]
+
+[node name="Node3D" type="Node3D" unique_id=809373520]
+script = ExtResource("1_bp6lh")
+
+[node name="Hip Hop Dancing" parent="." unique_id=252581030 instance=ExtResource("1_cru5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9240427, 0, 0.095006466)
+
+[node name="Hip Hop Dancing3" parent="." unique_id=1739135901 instance=ExtResource("1_cru5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.83564234, 0, 0.19001293)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Hip Hop Dancing3" unique_id=1509621447]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.461401, 0)
+
+[node name="Hip Hop Dancing2" parent="." unique_id=1176312119 instance=ExtResource("1_cru5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8114576, 0, 0.19001293)
+
+[node name="Hip Hop Dancing4" parent="." unique_id=2029677775 instance=ExtResource("1_cru5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5455394, 0, 0.2850194)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=858991004]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6210413, 4.297921, 9.175376)
+
+[node name="Island01" type="MeshInstance3D" parent="." unique_id=575558190]
+transform = Transform3D(19.688915, 0, 0, 0, 0.8360567, 0, 0, 0, 14.669162, -0.027603626, -1.0652115, -0.88222075)
+mesh = ExtResource("3_h4np7")
+
+[node name="Tree" type="MeshInstance3D" parent="." unique_id=1744874482]
+transform = Transform3D(22.149618, 0, 0, 0, 17.515242, 0, 0, 0, 15.052766, 3.795896, -0.67318594, -4.431896)
+mesh = ExtResource("4_ehybj")
+
+[node name="Tree" type="MeshInstance3D" parent="Tree" unique_id=2137163670]
+transform = Transform3D(0.45914772, 0, 0, 0, 0.62209535, 0, 0, 0, 0.73536956, -0.31437278, 0.015450504, 0.04247412)
+mesh = ExtResource("4_ehybj")
